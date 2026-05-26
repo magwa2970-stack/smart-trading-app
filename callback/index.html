@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deriv Login Callback</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: 80px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    h1 {
+      color: #111827;
+    }
+    p {
+      color: #4b5563;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    code {
+      display: block;
+      background: #f3f4f6;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Deriv Callback Page</h1>
+    <p>This page will receive users after they log in through Deriv.</p>
+    <p>Your redirect URL is working.</p>
+    <code id="url"></code>
+  </div>
+
+  <script>
+    document.getElementById("url").textContent = window.location.href;
+  </script>
+</body>
+</html>
